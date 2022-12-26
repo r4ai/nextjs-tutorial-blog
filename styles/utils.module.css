@@ -50,3 +50,19 @@
 .lightText {
   color: #666;
 }
+
+.markdown pre {
+  background-color: #f3f3f3;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+.markdown code {
+  background-color: #f3f3f3;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+
