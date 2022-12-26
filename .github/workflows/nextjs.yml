@@ -74,6 +74,8 @@ jobs:
               run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
             - name: Build & Static HTML export with Next.js
               run: ${{ steps.detect-package-manager.outputs.runner }} export
+            - name: Move 404 to root
+              run: mv ./out/404/index.html ./out/404.html
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v1
               with:
