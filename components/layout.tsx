@@ -7,6 +7,11 @@ import Link from "next/link";
 const name = "rai";
 export const siteTitle = "Next.js Sample Website";
 
+interface LayoutProps {
+  children: React.ReactNode;
+  home?: boolean;
+}
+
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
